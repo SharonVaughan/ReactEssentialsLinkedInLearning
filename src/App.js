@@ -14,7 +14,6 @@ function Main(props) {
     <section>
       <p>We serve the most {props.adjective} food around.</p>
       <img src={restaurant} height={200} alt="restaurant" /><br />
-      <img src="https://github.com/sharonvaughan.png" height={200} alt="me" />
       <ul style={{ textAlign: "left" }}>
         {props.dishes.map((dish) =>
           <li key={dish.id}>{dish.title}</li>)}
@@ -41,7 +40,6 @@ const dishes = [
 ]
 
 const dishObjects = dishes.map((dish, i) => ({ id: i, title: dish }))
-// console.log(dishObjects)
 
 function App() {
   return (
